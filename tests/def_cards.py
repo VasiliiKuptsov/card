@@ -1,3 +1,11 @@
+import json
+
+
+def get_data():
+    with open('data.json', 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    return data
+
 
 
 cards_date = []

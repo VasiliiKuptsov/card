@@ -2,12 +2,11 @@
 from def_cards import card_date
 from def_cards import date_rus
 from def_cards import number
-
+from def_cards import get_data
 import json
 
-cards_date = []
-with open("data.json","r", encoding='utf-8') as file:
-    data = json.load(file)
+
+data = get_data()
 cards_date = []
 """ Удаление пустых и недействит карточек"""
 cards_date =card_date(data)
